@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/custom_orange"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/tv"
+        android:background="@drawable/reg_text"
+        android:fontFamily="@font/ljk_ccrickveitch_wo5_otf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rows:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/rows_count_inp"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:fontFamily="@font/duntin_serif_bold_ttf"
+        android:backgroundTint="@color/custom_white"
+        android:layout_height="wrap_content" >
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:background="@drawable/reg_text"
+        android:fontFamily="@font/ljk_ccrickveitch_wo5_otf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Columns:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/columns_count_inp"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:fontFamily="@font/duntin_serif_bold_ttf"
+        android:backgroundTint="@color/custom_white"
+        android:layout_height="wrap_content" >
+    </EditText>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<resources>
+            <style name="AppTheme.NoActionBar">
+            <item name="windowActionBar">false</item>
+            <item name="windowNoTitle">true</item>
+            <item name="android:statusBarColor">@android:color/transparent</item>
+        </style>
+
+
+    <!--    THEME FOR MY MAIN ACTION BAR-->
+    <style name="ActionBarMainTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:background">@color/custom_orange</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:textAlignment">center</item>
+
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="colorControlNormal">@color/custom_white</item>
+    </style>
+
+    <!--SWITCH STYLE-->
+    <style name="SCBSwitch" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">#1695A3</item>
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">#f1f1f1
+        </item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">#42221f1f
+        </item>
+    </style>
+
+    <!--MENU ITEMS STYLE-->
+    <style name="NavigationText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/custom_white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/duntin_serif_bold_ttf</item>
+        <item name="android:layout_marginBottom">02dp</item>
+    </style>
+
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/custom_orange</item>
+    </style>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--NavigationView THEME (ITEM MARGIN)-->
+    <style name="NavigationTheme" parent="AppTheme">
+        <item name="android:layout_marginVertical">7dp</item>
+    </style>
+
+</resources>

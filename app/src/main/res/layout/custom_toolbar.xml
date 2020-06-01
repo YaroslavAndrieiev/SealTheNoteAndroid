@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/custom_orange"
+    android:id="@+id/top_toolbar"
+   >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginEnd="15dp"
+        android:id="@+id/rl7"
+        >
+
+        <ImageButton
+            android:id="@+id/btnMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_navigation"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/white_ripple"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            />
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:fontFamily="@font/ljk_ccrickveitch_wo5_otf"-->
+<!--            android:text="@string/app_in_name"-->
+<!--            android:textColor="@color/custom_white"-->
+<!--            android:textSize="30sp"-->
+<!--           />-->
+
+        <ImageButton
+            android:id="@+id/user_profile_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_bnt_person"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/white_ripple"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            />
+    </RelativeLayout>
+</androidx.appcompat.widget.Toolbar>

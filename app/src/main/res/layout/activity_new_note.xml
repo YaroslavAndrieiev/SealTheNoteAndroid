@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl8"
+    android:background="@android:color/white"
+    >
+
+<!--    <include-->
+<!--        android:id="@+id/myActionBar"-->
+<!--        layout="@layout/custom_toolbar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        />-->
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title:"
+        android:textColorHint="@color/custom_white"
+        android:fontFamily="@font/duntin_serif_bold_ttf"
+        android:textSize="25sp"
+        android:background="@color/custom_blue"
+        android:textColor="@color/custom_white"
+        android:paddingTop="10dp"
+        android:paddingBottom="20dp"
+        android:paddingStart="30dp"
+        android:id="@+id/input_title"
+
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:fillViewport="true"
+        android:id="@+id/scroll_view"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="60dp"
+        android:layout_height="fill_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="30dp"
+                android:id="@+id/ll_content_of_new_note"
+                >
+        <!--        android:layout_marginTop="70dp"-->
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:lines="40"
+                    android:minLines="1"
+                    android:maxLines="100"
+                    android:hint="Text:"
+                    android:gravity="top|left"
+                    android:fontFamily="@font/duntin_serif_bold_ttf"
+                    android:scrollbars="vertical"
+                    android:background="@android:color/white"
+                    android:paddingVertical="20dp"
+                    android:textSize="25sp"
+                    android:id="@+id/textInput"
+                    />
+            </LinearLayout>
+    </ScrollView>
+    <include
+        android:id="@+id/myActionBar"
+        layout="@layout/bottom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/custom_orange"
+    android:layout_gravity="bottom"
+    android:id="@+id/bottom_toolbar"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/ll7"
+        >
+
+        <ImageButton
+            android:id="@+id/btnImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_picture"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/white_ripple"
+            />
+
+        <ImageButton
+            android:id="@+id/btnMic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/white_ripple"
+            android:clickable="true"
+            android:focusable="true"
+            app:srcCompat="@drawable/ic_mic" />
+
+        <ImageButton
+            android:id="@+id/ic_table"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_table"
+            android:clickable="true"
+            android:focusable="true"
+
+            android:background="@drawable/white_ripple"
+            />
+        <ImageButton
+            android:id="@+id/btn_to_do"
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_radio_btn"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/white_ripple"
+            />
+        <ImageButton
+            android:id="@+id/btn_brush"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_brush"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/white_ripple"
+            />
+
+        <ImageButton
+            android:id="@+id/btnConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_confirm"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/white_ripple"
+            android:layout_marginLeft="15dp"/>
+
+<!--            android:backgroundTint="@color/custom_white"-->
+
+    </LinearLayout>
+</androidx.appcompat.widget.Toolbar>

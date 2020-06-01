@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/custom_orange"
+    tools:context=".MainActivity"
+    android:id="@+id/rl3"
+    tools:ignore="ExtraText">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/ll3"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true">
+    <TextView
+        android:id="@+id/autorize_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ljk_ccrickveitch_wo5_otf"
+        android:text="authorization"
+        android:layout_gravity="center"
+        android:textColor="@color/custom_white"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:id="@+id/ll4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginVertical="30dp"
+        android:background="@drawable/rectangle_border"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/login_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/reg_text"
+            android:fontFamily="@font/ljk_ccrickveitch_wo5_otf"
+            android:text="Login:"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_text_inp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/custom_white"
+            android:fontFamily="@font/duntin_serif_bold_ttf"
+            android:hint=""
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/password_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/reg_text"
+            android:fontFamily="@font/ljk_ccrickveitch_wo5_otf"
+            android:text="Password:"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_text_inp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/custom_white"
+            android:fontFamily="@font/duntin_serif_bold_ttf"
+            android:hint=""
+            android:textSize="20sp" />
+
+
+        <Button
+            android:id="@+id/btnLogInOnLoginScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_reg_in"
+            android:fontFamily="@font/ljk_ccrickveitch_wo5_otf"
+            android:paddingHorizontal="20dp"
+            android:text="Login"
+            android:textColor="@color/custom_white"
+            android:textSize="25sp" />
+
+
+    </LinearLayout>
+</LinearLayout>
+
+</RelativeLayout>

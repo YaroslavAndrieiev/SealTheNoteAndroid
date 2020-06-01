@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/custom_orange"
+    tools:context=".MainActivity"
+    android:id="@+id/rl2"
+    tools:ignore="ExtraText">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/ll2"
+    android:layout_marginVertical="90dp">
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="@font/ljk_ccrickveitch_wo5_otf"-->
+<!--        android:text="@string/app_in_name"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="@color/custom_white"-->
+<!--        android:textSize="35sp" />-->
+<!--        android:background="@drawable/gradient_back"-->
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/seal_the_note" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@+id/ll"
+            >
+
+            <Button
+                android:id="@+id/btnLogIn"
+                android:background="@drawable/btn_reg_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:fontFamily="@font/ljk_ccrickveitch_wo5_otf"
+                android:textColor="@color/custom_white"
+                android:text="Login"
+                android:paddingHorizontal="20dp"
+                android:layout_marginRight="15dp" />
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:background="@drawable/btn_reg_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:fontFamily="@font/ljk_ccrickveitch_wo5_otf"
+                android:textColor="@color/custom_white"
+                android:text="Register"
+                android:paddingHorizontal="20dp"/>
+        </LinearLayout>
+
+</LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl9"
+    >
+
+    <include
+        android:id="@+id/myActionBar"
+        layout="@layout/custom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/ljk_ccrickveitch_wo5_otf"
+        android:text="Seal \nthe note"
+        android:textAlignment="center"
+        android:textColor="@color/custom_white"
+        android:textSize="20sp"
+        android:id="@+id/app_name_settings"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:id="@+id/ll7"
+        android:layout_marginTop="90dp"
+        >
+
+        <ImageButton
+            android:id="@+id/bntPersonCircle"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:backgroundTint="@android:color/transparent"
+            app:srcCompat="@drawable/ic_account_circle" />
+
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/reg_text"
+            android:fontFamily="@font/ljk_ccrickveitch_wo5_otf"
+            android:text="Yarik228"
+            android:textAlignment="center"
+            android:paddingHorizontal="20dp"
+            android:textColor="@android:color/black"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical"
+            android:id="@+id/ll6"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/user_info_back"
+                android:fontFamily="@font/ljk_ccrickveitch_wo5_otf"
+                android:text="first name:"
+                android:textColor="@color/custom_white"
+                android:id="@+id/first_name_text_user_profile"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/duntin_serif_bold_ttf"
+                android:layout_marginStart="10dp"
+                android:layout_marginVertical="3dp"
+                android:text="YAROSLAV"
+                android:textColor="@android:color/black"
+                android:id="@+id/first_name_text_inp_user_profile"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/user_info_back"
+                android:fontFamily="@font/ljk_ccrickveitch_wo5_otf"
+                android:text="last name:"
+                android:textAlignment="center"
+                android:textColor="@color/custom_white"
+                android:textSize="20sp"
+                android:id="@+id/last_name_text_user_profile"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/duntin_serif_bold_ttf"
+                android:layout_marginStart="10dp"
+                android:layout_marginVertical="3dp"
+                android:text="ANDRIEIEV"
+                android:textColor="@android:color/black"
+                android:id="@+id/last_name_text_inp_user_profile"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/user_info_back"
+                android:fontFamily="@font/ljk_ccrickveitch_wo5_otf"
+                android:text="birthday:"
+                android:textAlignment="center"
+                android:textColor="@color/custom_white"
+                android:textSize="20sp"
+                android:id="@+id/birthday_text_user_profile"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/duntin_serif_bold_ttf"
+                android:layout_marginStart="10dp"
+                android:layout_marginVertical="3dp"
+                android:text="04.04.2001"
+                android:textColor="@android:color/black"
+                android:id="@+id/birthday_text_inp_user_profile"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/user_info_back"
+                android:fontFamily="@font/ljk_ccrickveitch_wo5_otf"
+                android:text="email:"
+                android:textAlignment="center"
+                android:textColor="@color/custom_white"
+                android:textSize="20sp"
+                android:id="@+id/email_text"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/duntin_serif_bold_ttf"
+                android:layout_marginStart="10dp"
+                android:layout_marginVertical="3dp"
+                android:text="yaroslav.andrieiev@nure.ua"
+                android:textColor="@android:color/black"
+                android:id="@+id/first_name_text"
+                android:textSize="20sp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

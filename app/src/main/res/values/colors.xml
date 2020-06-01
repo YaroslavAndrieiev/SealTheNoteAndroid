@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="ripple_efect">#44E374</color>
+    <color name="ripple_efect_forReg">#851D1D</color>
+    <color name="button_back">#D4D4D4</color>
+
+    <color name="custom_orange">#EB7F00</color>
+    <color name="custom_white">#F3FFE2</color>
+    <color name="custom_light_blue">#ACF0F2</color>
+    <color name="custom_green">#1695A3</color>
+    <color name="custom_blue">#225378</color>
+    <color name="custom_blue_darker">#1b415d</color>
+</resources>

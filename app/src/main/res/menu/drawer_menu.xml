@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/grp_Read">
+        <item
+            android:id="@+id/item_1"
+            android:checkable="true"
+            android:icon="@drawable/ic_picture"
+            android:title="Action A"/>
+        <item
+            android:id="@+id/item_2"
+            android:checkable="true"
+            android:icon="@drawable/ic_mic"
+            android:title="Action B"/>
+        <item
+            android:id="@+id/item_3"
+            android:checkable="true"
+            android:icon="@drawable/ic_bnt_new"
+            android:title="Action C"/>
+    </group>
+
+    <group android:id="@+id/grp_Watch">
+        <item
+            android:id="@+id/item_4"
+            android:checkable="true"
+            android:icon="@drawable/ic_navigation"
+            android:title="Action D"/>
+        <item
+            android:id="@+id/item_5"
+            android:checkable="true"
+            android:icon="@drawable/ic_confirm"
+            android:title="Action E"/>
+    </group>
+
+</menu>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl9"
+    >
+
+    <include
+        android:id="@+id/myActionBar"
+        layout="@layout/custom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/ljk_ccrickveitch_wo5_otf"
+        android:text="Seal \nthe note"
+        android:textAlignment="center"
+        android:textColor="@color/custom_white"
+        android:textSize="20sp"
+        android:id="@+id/app_name_settings"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/ll7"
+        android:layout_marginTop="90dp"
+        >
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/login_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/reg_text"
+            android:fontFamily="@font/ljk_ccrickveitch_wo5_otf"
+            android:text="Settings"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25sp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/duntin_serif_bold_ttf"
+                android:text="Dark mode"
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                />
+            <Switch
+                android:layout_width="100dp"
+                android:switchMinWidth="70dp"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+        <View
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:background="@color/custom_light_blue" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/duntin_serif_bold_ttf"
+                android:text="Setting"
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                />
+            <Switch
+                android:layout_width="100dp"
+                android:switchMinWidth="70dp"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+        <View
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:background="@color/custom_light_blue" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/duntin_serif_bold_ttf"
+                android:text="Setting"
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                />
+            <Switch
+                android:layout_width="100dp"
+                android:switchMinWidth="70dp"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+        <View
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:background="@color/custom_light_blue" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/duntin_serif_bold_ttf"
+                android:text="Setting"
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                />
+            <Switch
+                android:layout_width="100dp"
+                android:switchMinWidth="70dp"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+        <View
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:background="@color/custom_light_blue" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/duntin_serif_bold_ttf"
+                android:text="Setting"
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                />
+            <Switch
+                android:layout_width="100dp"
+                android:switchMinWidth="70dp"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

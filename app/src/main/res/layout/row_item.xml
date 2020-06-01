@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="15dp"
+    android:paddingTop="15dp"
+    android:gravity="center"
+    android:id="@+id/row_item_linear_layout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rectangle_for_notes"
+        android:gravity="center"
+        android:id="@+id/ll8"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleTextView"
+            android:text="Title"
+            android:textSize="25sp"
+            android:fontFamily="@font/duntin_serif_bold_ttf"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            android:background="@color/custom_blue"
+            android:textColor="@color/custom_white"
+            android:textAlignment="center"
+            android:maxLines="3"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/noteTextView"
+            android:text="NoteText"
+            android:textSize="20sp"
+            android:fontFamily="@font/duntin_serif_bold_ttf"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            android:maxLines="10"
+            />
+    </LinearLayout>
+
+</LinearLayout>
