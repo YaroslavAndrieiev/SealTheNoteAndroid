@@ -14,21 +14,21 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.ImageButton;
-import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.textfield.TextInputEditText;
 import com.google.gson.Gson;
 
 import java.util.ArrayList;
-import java.util.List;
 
 
 public class AllNotesV2 extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener,MainAdapter.onNoteListener{
@@ -47,6 +47,7 @@ public class AllNotesV2 extends AppCompatActivity implements NavigationView.OnNa
     private MainAdapter recyclerViewAdapter;
     private StaggeredGridLayoutManager manager;
     private NavigationView navMenu;
+    private TextInputEditText searchQuery;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,10 +70,26 @@ public class AllNotesV2 extends AppCompatActivity implements NavigationView.OnNa
 //        toolbar.setLogo(R.drawable.seal_the_note);
 
         btnNewNote = findViewById(R.id.bntNewNote);//Кнопка создания новой заметки
-        tvInfo=(TextView)findViewById(R.id.test_tv);
-        userProfile=findViewById(R.id.user_profile_img_btn);
-        drawerLayout=findViewById(R.id.test_drawer_layout);
-        btnUndo=findViewById(R.id.bntUndo);
+        tvInfo = (TextView)findViewById(R.id.test_tv);
+        userProfile = findViewById(R.id.user_profile_img_btn);
+        drawerLayout = findViewById(R.id.test_drawer_layout);
+        btnUndo = findViewById(R.id.bntUndo);
+
+        searchQuery =  (TextInputEditText) findViewById(R.id.search_query);
+        searchQuery.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                filterRecyclerView(s.toString());
+            }
+        });
 
         //Menu stuff:
         NavigationView navigationView=(NavigationView)findViewById(R.id.test_navigation_view);
@@ -142,6 +159,17 @@ public class AllNotesV2 extends AppCompatActivity implements NavigationView.OnNa
                 }
             }
         });
+    }
+
+    private void filterRecyclerView(String text) {
+        ArrayList<Note> filteredList = new ArrayList<>();
+
+        for(Note item : myData.getNotesList()) {
+            if (item.getTitle().toLowerCase().contains(searchQuery.getText())) {
+                filteredList.add(item);
+            }
+            recyclerViewAdapter.filterList(filteredList);
+        }
     }
 
     //Actions on selection items in menu
@@ -219,7 +247,7 @@ public class AllNotesV2 extends AppCompatActivity implements NavigationView.OnNa
     private void pushInfoToDataRecyclerView() {
         manager = new StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL);
         staggeredRecyclerView.setLayoutManager(manager);
-        recyclerViewAdapter= new MainAdapter(this,myData.getNotesList(),this,btnNewNote,btnUndo);
+        recyclerViewAdapter = new MainAdapter(this,myData.getNotesList(),this,btnNewNote,btnUndo);
         staggeredRecyclerView.setAdapter(recyclerViewAdapter);
     }
 
@@ -266,6 +294,7 @@ public class AllNotesV2 extends AppCompatActivity implements NavigationView.OnNa
             Note newNote = new Note(title,text);
             myData.addNote(newNote);
             saveDataToSharedPreferences();
+            RefreshDataBySharedPreferences();
         }
         else if(requestCode==2) {
             int currentPosition=data.getIntExtra("currentPositionBack",0);

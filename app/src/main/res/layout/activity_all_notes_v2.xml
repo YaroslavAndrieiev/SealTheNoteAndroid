@@ -52,11 +52,34 @@
             android:textSize="20sp"
             android:id="@+id/test_app_name"/>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="75dp"
+
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/ic_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_search"
+                android:background="@android:color/transparent"
+                />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/search_query"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/custom_orange"
+                android:fontFamily="@font/duntin_serif_bold_ttf"
+                android:hint="Search query:"
+                android:textSize="20sp" />
+        </LinearLayout>
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="125dp"
             android:outlineAmbientShadowColor="@android:color/black" />
 
         <TextView

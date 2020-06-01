@@ -3,7 +3,7 @@ package com.example.mainandroidproject;
 import android.view.View;
 
 import java.util.ArrayList;
-
+//CLASS IS USELESS
 public class NoteContentItems {
 
     private ArrayList<View> items;

@@ -68,8 +68,6 @@ public class NewNote extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_note);
 
-
-
         //Шрифт Dunkin
         typefaceDunkin= ResourcesCompat.getFont(NewNote.this, R.font.duntin_serif_bold_ttf);
 
@@ -116,6 +114,7 @@ public class NewNote extends AppCompatActivity {
         if (intentFromAllNotes != null) {
             currentTitleNote = intentFromAllNotes.getStringExtra("clickedNoteTitle");
             currentTextNote = intentFromAllNotes.getStringExtra("clickedNoteText");
+            currentPosition = intentFromAllNotes.getIntExtra("currentPosition", 0);
 //            String someJsonItem = intentFromAllNotes.getStringExtra("notesByJsonString");
 //            if(someJsonItem!=null && !someJsonItem.equals("")) {
 //                Gson jsonLoad = new Gson();
@@ -354,11 +353,11 @@ public class NewNote extends AppCompatActivity {
         intent.putExtra("newNoteTitle",newNoteTitle);
         intent.putExtra("newNoteText",newNoteText);
 
-//        Gson jsonSave = new Gson();
-//        NoteContentItems noteContentItem = new NoteContentItems();
+//        Gson gsonObject = new Gson();
+//        NoteContentItems someItemToJson = new NoteContentItems();
 //        View view = new View(NewNote.this);
-//        noteContentItem.addItem(view);
-//        String someElementString = jsonSave.toJson(noteContentItem);
+//        someItemToJson.addItem(view);
+//        String someElementString = gsonObject.toJson(someItemToJson);
 //        intent.putExtra("someElement",someElementString);
         setResult(RESULT_OK, intent);
         finish();

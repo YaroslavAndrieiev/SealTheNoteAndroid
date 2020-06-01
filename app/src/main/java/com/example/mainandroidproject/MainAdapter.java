@@ -101,4 +101,9 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.TextViewHolder
     public interface onNoteListener {
         void onNoteClick(int position);
     }
+
+    public void filterList (ArrayList<Note> filteredList) {
+        notesList = filteredList;
+        notifyDataSetChanged();
+    }
 }
