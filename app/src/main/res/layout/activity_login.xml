@@ -70,6 +70,7 @@
             android:textColor="@android:color/black"
             android:textSize="20sp" />
 
+
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/password_text_inp"
             android:layout_width="match_parent"
@@ -77,8 +78,8 @@
             android:backgroundTint="@color/custom_white"
             android:fontFamily="@font/duntin_serif_bold_ttf"
             android:hint=""
+            android:inputType="numberPassword"
             android:textSize="20sp" />
-
 
         <Button
             android:id="@+id/btnLogInOnLoginScreen"

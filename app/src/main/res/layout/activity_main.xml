@@ -104,6 +104,7 @@
                 android:fontFamily="@font/duntin_serif_bold_ttf"
                 android:backgroundTint="@color/custom_white"
                 android:textSize="20sp"
+                android:inputType="date"
                 android:id="@+id/birthday_text_inp"
                 />
 
