@@ -59,7 +59,7 @@ public class UserProfile extends AppCompatActivity {
                 startActivityForResult(i, REQUEST_CODE_USER_PHOTO);
             }
         });
-        
+
 
     }
 

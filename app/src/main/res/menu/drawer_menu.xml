@@ -6,17 +6,17 @@
             android:id="@+id/item_1"
             android:checkable="true"
             android:icon="@drawable/ic_picture"
-            android:title="Action A"/>
+            android:title="All notes"/>
         <item
             android:id="@+id/item_2"
             android:checkable="true"
             android:icon="@drawable/ic_mic"
-            android:title="Action B"/>
+            android:title="Tag 1"/>
         <item
             android:id="@+id/item_3"
             android:checkable="true"
             android:icon="@drawable/ic_bnt_new"
-            android:title="Action C"/>
+            android:title="Tag 2"/>
     </group>
 
     <group android:id="@+id/grp_Watch">
@@ -24,12 +24,12 @@
             android:id="@+id/item_4"
             android:checkable="true"
             android:icon="@drawable/ic_navigation"
-            android:title="Action D"/>
+            android:title="Tag 3"/>
         <item
             android:id="@+id/item_5"
             android:checkable="true"
             android:icon="@drawable/ic_confirm"
-            android:title="Action E"/>
+            android:title="Tag 4"/>
     </group>
 
 </menu>

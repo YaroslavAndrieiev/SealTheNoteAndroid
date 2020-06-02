@@ -175,9 +175,8 @@ public class AllNotesV2 extends AppCompatActivity implements NavigationView.OnNa
     //Actions on selection items in menu
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        String itemName=(String) item.getTitle();
-
-        tvInfo.setText(itemName);
+//        String itemName=(String) item.getTitle();
+//        tvInfo.setText(itemName);
         closeDrawer();
 
         switch (item.getItemId()){

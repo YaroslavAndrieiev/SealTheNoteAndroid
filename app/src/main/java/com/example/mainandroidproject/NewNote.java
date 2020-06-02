@@ -31,7 +31,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputEditText;
-import com.google.gson.Gson;
 
 import java.io.File;
 import java.util.ArrayList;

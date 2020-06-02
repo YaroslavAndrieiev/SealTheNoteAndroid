@@ -38,7 +38,7 @@
             android:layout_height="wrap_content"
             android:weightSum="2"
             android:gravity="center"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:id="@+id/ll"
             >
 
@@ -51,8 +51,9 @@
                 android:fontFamily="@font/ljk_ccrickveitch_wo5_otf"
                 android:textColor="@color/custom_white"
                 android:text="Login"
-                android:paddingHorizontal="20dp"
-                android:layout_marginRight="15dp" />
+                android:paddingHorizontal="15dp"
+                android:layout_marginBottom="20dp"
+                 />
 
             <Button
                 android:id="@+id/btnRegister"
@@ -63,7 +64,7 @@
                 android:fontFamily="@font/ljk_ccrickveitch_wo5_otf"
                 android:textColor="@color/custom_white"
                 android:text="Register"
-                android:paddingHorizontal="20dp"/>
+                android:paddingHorizontal="15dp"/>
         </LinearLayout>
 
 </LinearLayout>
